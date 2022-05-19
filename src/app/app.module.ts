@@ -10,6 +10,7 @@ import { LoginComponent } from './components/login/login.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { CadastroComponent } from './components/cadastro/cadastro.component';
 import { FeedbackComponent } from './components/feedback/feedback.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { FeedbackComponent } from './components/feedback/feedback.component';
     LoginComponent,
     NavbarComponent,
     CadastroComponent,
-    FeedbackComponent
+    FeedbackComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
