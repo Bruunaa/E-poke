@@ -8,7 +8,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 
 const routes: Routes = [
-  {path:'home', component: HomeComponent},
+  {path:'', component: HomeComponent},
   {path: 'login', component: LoginComponent},
   {path:'navbar', component: NavbarComponent},
   {path: 'cadastro', component: CadastroComponent},
