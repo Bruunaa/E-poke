@@ -5,6 +5,7 @@ import { FeedbackComponent } from './components/feedback/feedback.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 const routes: Routes = [
   {path:'home', component: HomeComponent},
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path:'navbar', component: NavbarComponent},
   {path: 'cadastro', component: CadastroComponent},
   {path: 'feedback', component:FeedbackComponent},
+  {path: '**', component: NotFoundComponent},
 
 ];
 
