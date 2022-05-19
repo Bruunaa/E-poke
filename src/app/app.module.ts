@@ -9,6 +9,7 @@ import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { CadastroComponent } from './components/cadastro/cadastro.component';
+import { FeedbackComponent } from './components/feedback/feedback.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { CadastroComponent } from './components/cadastro/cadastro.component';
     HomeComponent,
     LoginComponent,
     NavbarComponent,
-    CadastroComponent
+    CadastroComponent,
+    FeedbackComponent
   ],
   imports: [
     BrowserModule,
