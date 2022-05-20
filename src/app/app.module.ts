@@ -10,6 +10,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { CadastroComponent } from './components/cadastro/cadastro.component';
 import { FeedbackComponent } from './components/feedback/feedback.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { ProdutoComponent } from './components/produto/produto.component';
+import { ProdutosComponent } from './components/produtos/produtos.component';
 
 
 @NgModule({
@@ -21,6 +23,8 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     CadastroComponent,
     FeedbackComponent,
     NotFoundComponent,
+    ProdutoComponent,
+    ProdutosComponent,
   ],
   imports: [
     BrowserModule,
