@@ -12,6 +12,8 @@ import { FeedbackComponent } from './components/feedback/feedback.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { ProdutoComponent } from './components/produto/produto.component';
 import { ProdutosComponent } from './components/produtos/produtos.component';
+import { ServicoComponent } from './components/servico/servico.component';
+import { ServicosComponent } from './components/servicos/servicos.component';
 
 
 @NgModule({
@@ -25,6 +27,8 @@ import { ProdutosComponent } from './components/produtos/produtos.component';
     NotFoundComponent,
     ProdutoComponent,
     ProdutosComponent,
+    ServicoComponent,
+    ServicosComponent,
   ],
   imports: [
     BrowserModule,
