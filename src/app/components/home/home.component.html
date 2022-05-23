@@ -1,1 +1,69 @@
-<p>home works!</p>
+<div class="container ">
+    <div class="container-fixed bg-light" id="carouselSite">
+        <ngb-carousel *ngIf="imagem" class="img-fluid d-block">
+            <ng-template ngbSlide>
+                <div class="picsum-img-wrapper">
+                    <img [src]="imagem" class="img-fluid d-block" alt="Random first slide">
+                </div>
+                <div class="carousel-caption">
+                    <button class="btn btn-primary">Comprar</button>
+                </div>
+            </ng-template>
+            <ng-template ngbSlide>
+                <div class="picsum-img-wrapper">
+                    <img [src]="imagem2" class="img-fluid d-block" alt="Random second slide">
+                </div>
+                <div class="carousel-caption">
+                </div>
+            </ng-template>
+            <ng-template ngbSlide>
+                <div class="picsum-img-wrapper">
+                    <img [src]="imagem3" class="img-fluid d-block" alt="Random second slide">
+                </div>
+                <div class="carousel-caption">
+                </div>
+            </ng-template>
+        </ngb-carousel>
+    </div>
+    <section class="page-section" id="services">
+        <div class="container px-4 px-lg-5">
+            <h2 class="text-center mt-0">At Your Service</h2>
+            <hr class="divider" />
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <div class="mb-2"><img [src]="imagem4" class="card-img-top" alt="..."></div>
+                        <h3 class="h4 mb-2">Titulo</h3>
+                        <p class="text-muted mb-0">descrição</p>
+                        <button class="btn btn-warning">Comprar</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <div class="mb-2"><img [src]="imagem4" class="card-img-top" alt="..."></div>
+                        <h3 class="h4 mb-2">Titulo</h3>
+                        <p class="text-muted mb-0">descrição</p>
+                        <button class="btn btn-warning">Comprar</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <div class="mb-2"><img [src]="imagem4" class="card-img-top" alt="..."></div>
+                        <h3 class="h4 mb-2">Titulo</h3>
+                        <p class="text-muted mb-0">descrição</p>
+                        <button class="btn btn-warning">Comprar</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <div class="mb-2"><img [src]="imagem4" class="card-img-top" alt="..."></div>
+                        <h3 class="h4 mb-2">Titulo</h3>
+                        <p class="text-muted mb-0">descrição</p>
+                        <button class="btn btn-warning">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    
