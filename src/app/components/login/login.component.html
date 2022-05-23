@@ -1,1 +1,27 @@
-<p>login works!</p>
+<div class="super">
+    <div class="container" >
+        <div class="container-login">
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="mb-1">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input formControlName="email" id="email" type="email" class="form-control">
+                    <small class="text-warning" *ngIf="email?.touched && email?.invalid"></small>
+                    <span class="text-warning" *ngIf="email?.hasError('required')">Email obrigatório!</span>
+                    <span class="text-warning" *ngIf="email?.hasError('email')">Email inválido!</span>
+                </div>
+                <div class="mb-3">
+                    <label for="senha" class="form-label">Senha</label>
+                    <input formControlName="senha" id="senha" type="password" class="form-control">
+                    <small class="text-danger" *ngIf="senha?.touched && email?.invalid"></small>
+                    <span class="text-danger" *ngIf="senha?.hasError('required')">Senha obrigatória!</span>
+                    <span class="text-danger" *ngIf="senha?.hasError('minlength')">Senha deve conter no mínimo 6
+                        caracteres</span>
+                </div>
+                <div class="button-cont">
+                    <div id="button-login">
+                        <button class="btn btn-warning" [disabled]="loginForm.invalid">Login</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        </div>
