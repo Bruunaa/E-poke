@@ -1,0 +1,23 @@
+.container{
+    border: 1px solid black;
+    box-shadow: 1px 10px 5px 5px gray;
+    border-radius: 10px;
+    padding:60px ;
+    max-height: 500px;
+    min-height: 250px;
+    width: 500px;
+}
+
+.container-login{
+    display: inline-flex;
+    height: 500px;
+    width: 500px;
+}
+
+.button-cont{
+    display: inline-flex;
+}
+
+#button-login{
+    margin-right: 15px;
+}
