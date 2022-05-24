@@ -9,15 +9,22 @@
     margin-top: 100px;
 }
 
+h1{
+   padding-bottom: 15px;
+}
+
 .container-login{
     display: inline-flex;
     height: 500px;
     width: 500px;
+    padding: auto;
 }
 
 .button-cont{
     display: inline-flex;
 }
+
+
 
 #button-login{
     margin-right: 15px;
