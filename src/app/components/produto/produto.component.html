@@ -1,19 +1,18 @@
-<section class="page-section" id="services">
-    <div class="container container--active  ">
+<div class=" justify-content-between container-fluid">
+    <div class="container container-fluid  ">
         <div class="collection">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row row-cols-1 row-cols-md-1 g-1 ">
-                    <div class="col mb-3  ">
-                        <div class="card border-warning h-100 text-center mb-3 " style="width: 135%;">
-                            <div class="radius mx-auto mt-2 btn btn-warning " style="width: 25% ; ">
-                                <img [src]="produto.imagem" class="card-img-top" alt="...">
+                    <div class="flex-col mb-3  ">
+                        <div class="card border-warning h-100 text-center mb-3 " style="width: auto;">
+                            <div class="radius mx-auto mt-2 btn btn-warning " style="width: auto ; ">
+                                <img [src]="produto.imagem" class="card-img-top img-fluid" alt="...">
                             </div>
                             <div class="card-body ">
                                 <h3 class="card-tittle">{{produto.nomeDoProduto}}</h3>
                                 <p class=" card-text">R$: {{produto.preco}}</p>
                                 <p class="card-text">{{produto.descricao}}</p>
-                                
-                                <button class="btn btn-warning mb-3 border-warning" (click)="onComprar()">Comprar</button>
+                                <button class="btn btn-warning  border-warning" (click)="onComprar()">Comprar</button>
                             </div>
                         </div>
                     </div>
@@ -21,4 +20,4 @@
             </div>
         </div>
     </div>
-</section>
+</div>
