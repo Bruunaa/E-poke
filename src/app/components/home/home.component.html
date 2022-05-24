@@ -1,69 +1,65 @@
-<div class="container ">
-    <div class="container-fixed bg-light" id="carouselSite">
-        <ngb-carousel *ngIf="imagem" class="img-fluid d-block">
+<div class="container-fluid ">
+    <div id="carouselSite">
+        <ngb-carousel *ngIf="imagem" class="img-fluid ">
             <ng-template ngbSlide>
+                
                 <div class="picsum-img-wrapper">
-                    <img [src]="imagem" class="img-fluid d-block" alt="Random first slide">
-                </div>
-                <div class="carousel-caption">
-                    <button class="btn btn-primary">Comprar</button>
+                    <img [src]="imagem" class="imagem-banner img-fluid  d-block" alt="Random first slide">
                 </div>
             </ng-template>
             <ng-template ngbSlide>
                 <div class="picsum-img-wrapper">
-                    <img [src]="imagem2" class="img-fluid d-block" alt="Random second slide">
-                </div>
-                <div class="carousel-caption">
+                    <img [src]="imagem2" class="imagem-banner img-fluid d-block" alt="Random second slide">
                 </div>
             </ng-template>
             <ng-template ngbSlide>
                 <div class="picsum-img-wrapper">
-                    <img [src]="imagem3" class="img-fluid d-block" alt="Random second slide">
-                </div>
-                <div class="carousel-caption">
+                    <img [src]="imagem3" class="imagem-banner img-fluid d-block" alt="Random second slide">
                 </div>
             </ng-template>
         </ngb-carousel>
     </div>
+    
     <section class="page-section" id="services">
-        <div class="container px-4 px-lg-5">
-            <h2 class="text-center mt-0">At Your Service</h2>
+        <div class="container mt-3 px-4 px-lg-5">
+            <h2 class="text-center mt-0">Alguns dos nossos Produtos</h2>
             <hr class="divider" />
             <div class="row gx-4 gx-lg-5">
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-lg-3 mb-3 col-md-6 text-center">
                     <div class="mt-5">
                         <div class="mb-2"><img [src]="imagem4" class="card-img-top" alt="..."></div>
-                        <h3 class="h4 mb-2">Titulo</h3>
-                        <p class="text-muted mb-0">descrição</p>
-                        <button class="btn btn-warning">Comprar</button>
+                        <h3 class="h4 mb-2">Pokebola</h3>
+                        <p class="text-muted mb-0">Habilita o jogador a capturar um pokémon, com catch rate de 1x</p>
+                        <button class="btn btn-warning"><a class="nav-link" [routerLink]="'/Produto'">Comprar</a></button>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
-                        <div class="mb-2"><img [src]="imagem4" class="card-img-top" alt="..."></div>
-                        <h3 class="h4 mb-2">Titulo</h3>
-                        <p class="text-muted mb-0">descrição</p>
-                        <button class="btn btn-warning">Comprar</button>
+                        <div class="mb-2"><img [src]="imagem5" class="card-img-top" alt="..."></div>
+                        <h3 class="h4 mb-2">Pedra d'água</h3>
+                        <p class="text-muted mb-0">Faz os seguintes pokémon evoluir: Poliwhirl (em Poliwrath), Shellder, Staryu, Eevee (em Vaporeon), Lombre e Panpour.</p>
+                        <button class="btn btn-warning"><a class="nav-link" [routerLink]="'/Produto'">Comprar</a></button>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
-                        <div class="mb-2"><img [src]="imagem4" class="card-img-top" alt="..."></div>
-                        <h3 class="h4 mb-2">Titulo</h3>
-                        <p class="text-muted mb-0">descrição</p>
-                        <button class="btn btn-warning">Comprar</button>
+                        <div class="mb-2"><img [src]="imagem6" class="card-img-top" alt="..."></div>
+                        <h3 class="h4 mb-2">Timer Ball</h3>
+                        <p class="text-muted mb-0"> Funciona melhor em batalhas longas. Quanto mais turnos, mais efetiva será.</p>
+                        <button class="btn btn-warning"><a class="nav-link" [routerLink]="'/Produto'">Comprar</a></button>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
-                        <div class="mb-2"><img [src]="imagem4" class="card-img-top" alt="..."></div>
-                        <h3 class="h4 mb-2">Titulo</h3>
-                        <p class="text-muted mb-0">descrição</p>
-                        <button class="btn btn-warning">Comprar</button>
+                        <div class="mb-2"><img [src]="imagem7" class="card-img-top" alt="..."></div>
+                        <h3 class="h4 mb-2">Pedra do Brilho</h3>
+                        <p class="text-muted mb-0">Faz os seguintes pokémon evoluir: Togetic, Roselia, Minccino e Floette.</p>
+                        <button class="btn btn-warning"><a class="nav-link" [routerLink]="'/Produto'">Comprar</a></button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    
     </div>
     
