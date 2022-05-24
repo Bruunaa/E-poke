@@ -1,0 +1,32 @@
+
+*{
+    padding: 0;
+}
+
+img {
+ height: 100%;
+ width: 100%;
+ object-fit: contain;
+}
+.cat {
+ height:300px;
+ width: 300px;
+}
+
+.imagem-banner{
+    position: relative;
+    height: 70vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.img.card-img-top{
+    padding: 20px;
+    flex-shrink: 0;
+}
+
