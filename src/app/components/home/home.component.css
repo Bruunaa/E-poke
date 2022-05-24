@@ -1,32 +1,51 @@
 
-*{
+
+* {
     padding: 0;
+    
 }
 
-img {
- height: 100%;
- width: 100%;
- object-fit: contain;
-}
+
 .cat {
- height:300px;
- width: 300px;
+    height: 300px;
+    width: 300px;
 }
 
-.imagem-banner{
+.imagem-banner {
+    display: flex;
     position: relative;
-    height: 70vh;
-    width: 100vw;
+    height: auto;
+    width: auto;
     object-fit: cover;
 }
 
-a{
+.card-deck{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+a {
     text-decoration: none;
     color: black;
 }
 
-.img.card-img-top{
-    padding: 20px;
-    flex-shrink: 0;
+.col-3 {
+    padding: 1%;
+    display: flex;
+}
+
+.container-fluid{
+    display:  block;
+}
+
+@media (max-width: 897px){
+    .card{
+        margin: auto;
+    }
+    .col-3{
+        flex:0 0 auto;
+        width: 50%;
+    }
+
 }
 

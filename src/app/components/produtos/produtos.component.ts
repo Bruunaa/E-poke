@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { Produto } from 'src/app/models/produto';
 import { ProdutosService } from 'src/app/shared/services/produtos/produtos.service';
 
@@ -10,6 +10,12 @@ import { ProdutosService } from 'src/app/shared/services/produtos/produtos.servi
 export class ProdutosComponent implements OnInit {
 
   constructor(private produtosService: ProdutosService) { }
+  public innerWidth: any;
+
+  @HostListener('window:resize', ['$event'])
+  onResize() {
+    this.innerWidth = window.innerWidth;
+  }
 
   produtos: Produto[] = [];
   carrinho: Produto[] = [];

@@ -9,3 +9,17 @@
     border-color: black;
 }
 
+@media (max-width: 897px){
+    .card{
+        margin: auto;
+    }
+    .col-3{
+        flex:0 0 auto;
+        width: 50%;
+    }
+
+    .card-deck{
+        align-items: center;
+    }
+}
+
