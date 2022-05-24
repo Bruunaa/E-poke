@@ -1,16 +1,25 @@
-<div class="mx-1">
-    <div>
-        <h2 class=" mr-2 mt-2 text-center">Pokedutros</h2>
-        <hr class="divider mb-2" />
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col" *ngFor="let produto of produtos">
-                <app-produto [dadoProduto]="produto" (onCarrinho)="addCarrinho($event)">
-                    <p *ngIf="produtoNoCarrinho(produto)" class="text-muted">
-                        *Produto no carrinho
+<div class="text-center">
+    <div class="container container--active">
+        <div class="row row-cols-2 row-cols-md-1 g-1 " >
+            <div class="col mb-3" style="width:100%;">
+                <div class="text-center">
+                    <h2 class="  mt-2 text-center"> <b> PokePodutros </b> </h2>
+                    <p class="text-dark">Produtos no carrinho:
+                        <span class="badge bg-warning">{{carrinho.length}}</span>
                     </p>
-                </app-produto>
+                </div>
+                <hr class="divider   " style="width: 2000px; margin-left: -350px; color:#e6a42a ; ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3 " *ngFor="let produto of produtos">
+                            <app-produto [dadoProduto]="produto" (onCarrinho)="addCarrinho($event)">
+                                <p *ngIf="produtoNoCarrinho(produto)" class="text-muted">
+                                    *Produto no carrinho
+                                </p>
+                            </app-produto>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
