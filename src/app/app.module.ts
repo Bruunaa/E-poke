@@ -16,6 +16,7 @@ import { ServicoComponent } from './components/servico/servico.component';
 import { ServicosComponent } from './components/servicos/servicos.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ContatoComponent } from './components/contato/contato.component';
 
 
 
@@ -31,7 +32,8 @@ import { HttpClientModule } from '@angular/common/http';
     ProdutoComponent,
     ProdutosComponent,
     ServicoComponent,
-    ServicosComponent
+    ServicosComponent,
+    ContatoComponent
   ],
   imports: [
     BrowserModule,
