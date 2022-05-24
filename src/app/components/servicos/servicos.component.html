@@ -1,1 +1,8 @@
-<p>servicos works!</p>
+<div class="container">
+    <h1 text-center>Conheça nossos Pokemons</h1>
+    <div class="row">
+        <div class="col" *ngFor="let poke of resultados">
+            <app-servico [pokemons]="poke"></app-servico>
+        </div>
+    </div>
+</div>

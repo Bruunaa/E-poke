@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Pokemon } from 'src/app/models/pokemon';
+import { PokemonService } from 'src/app/shard/services/pokemon/pokemon.service';
+
 
 @Component({
   selector: 'app-servicos',
@@ -6,10 +9,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./servicos.component.css']
 })
 export class ServicosComponent implements OnInit {
+  resultados: Pokemon[] = [];
 
-  constructor() { }
+  constructor(private api: PokemonService) { }
 
   ngOnInit(): void {
+    this.api.getPokemons();
+    this.resultados = this.api.pokemons;
   }
-
 }
+

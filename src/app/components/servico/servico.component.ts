@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Pokemon } from 'src/app/models/pokemon';
+
+
 
 @Component({
   selector: 'app-servico',
@@ -6,8 +9,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./servico.component.css']
 })
 export class ServicoComponent implements OnInit {
+  @Input('pokemons') poke!: Pokemon;
+  
 
-  constructor() { }
 
   ngOnInit(): void {
   }

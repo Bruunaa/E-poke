@@ -15,6 +15,8 @@ import { ProdutosComponent } from './components/produtos/produtos.component';
 import { ServicoComponent } from './components/servico/servico.component';
 import { ServicosComponent } from './components/servicos/servicos.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 @NgModule({
@@ -29,7 +31,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ProdutoComponent,
     ProdutosComponent,
     ServicoComponent,
-    ServicosComponent,
+    ServicosComponent
   ],
   imports: [
     BrowserModule,
@@ -37,6 +39,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
