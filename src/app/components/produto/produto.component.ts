@@ -1,5 +1,5 @@
 import { Component, Input, EventEmitter, OnDestroy, OnInit, Output } from '@angular/core';
-import { CategoriaProduto, Produto, ProdutoCura, ProdutoPedras } from 'src/app/models/produto';
+import { CategoriaProduto, Produto } from 'src/app/models/produto';
 
 
 
@@ -21,7 +21,7 @@ export class ProdutoComponent implements OnInit, OnDestroy {
   }
 
   onComprar() {
-    alert("Produtodicionado no carrinho!");
+    alert("Produto adicionado no carrinho!");
     this.onCarrinho.emit(this.produto);
   }
 
