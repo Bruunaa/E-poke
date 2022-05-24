@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Produto } from 'src/app/models/produto';
+import { ProdutosService } from 'src/app/shared/services/produtos/produtos.service';
 
 @Component({
   selector: 'app-produtos',
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProdutosComponent implements OnInit {
 
-  constructor() { }
+  constructor(private produtosService: ProdutosService) { }
+
+  produtos: Produto[] = [];
+  carrinho: Produto[] = [];
+
+  addCarrinho(produto: Produto) {
+    this.carrinho.push(produto);
+  }
+
+  produtoNoCarrinho(produto: Produto): boolean {
+    return this.carrinho.includes(produto);
+  }
 
   ngOnInit(): void {
+      this.produtos = this.produtosService.getProdutos();
   }
 
 }
