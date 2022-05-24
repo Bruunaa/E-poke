@@ -1,0 +1,18 @@
+.container{
+    height: auto;
+    max-width: 300px;
+    border: 1px solid black;
+    box-shadow: 1px 5px 5px 5px gray;
+    border-radius: 10px;
+    padding: 5px 50px;
+    margin: 30px;
+ }
+ 
+ .container:hover{
+    border: 3px solid #575455f6;
+    border-radius: 10%;
+    -webkit-filter: drop-shadow(2px 1px 0px rgba(0,0,0,.5));
+    filter: drop-shadow(2px 1px 0px rgba(0,0,0,.5));
+    -webkit-transform: rotateZ(-360deg) scale(1.2);
+    transform: rotateZ(-360deg) scale(1.2);
+ }
