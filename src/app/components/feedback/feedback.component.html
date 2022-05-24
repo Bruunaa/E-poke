@@ -1,0 +1,19 @@
+<div class="container">
+    <form id="formulario" [formGroup]="feedbackForm" (ngSubmit)="onSubmit()"action="">
+        <h1 class="poke-cad" id="cad">Feedback</h1>
+        <div id="cad" class="mb-3"><label for="" class="form-label">Nome
+            </label>
+            <input type="text" class="form-control">
+            <small class="text-danger" *ngIf="nome?.touched && nome?.invalid">
+                <span *ngIf="nome?.hasError('required')">O nome é Obrigatório</span>
+                </small>
+        </div>
+        <div class="mb-3"><label for="" class="form-label">Email</label>
+            <input type="email" class="form-control">
+        </div>
+        <div class="form-outline mb-4"><label for="" class="form-label">Comentário</label>
+            <textarea class="form-control" id="textAreaExample6" rows="3"></textarea>
+        </div>
+            <button class="btn btn-warning">Enviar</button>
+    </form>
+    </div>

@@ -18,6 +18,7 @@ export class PokemonService {
       .pipe(
         map((value) => value.results),
         map((results: any) => {
+          //From converte outros objetos e tipos de dados em um observable, podendo der um objeto iterável em um observable q
           return from(results).pipe(mergeMap((v: any) => this.http.get(v.url)));
         }),
         mergeMap((value) => value)
