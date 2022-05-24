@@ -13,9 +13,9 @@
 
 .imagem-banner {
     display: flex;
-    position: relative;
-    height: auto;
-    width: auto;
+    position: static;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
 }
 
