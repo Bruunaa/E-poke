@@ -1,1 +1,11 @@
-<p>servico works!</p>
+<div class="container">
+    <div class="servico-card mb-5 mt-5" style="max-width: 18rem;">
+        <img [src]="poke?.imagem" alt="Pokemon Image">
+        <div class="servico__name">{{poke?.name}}</div>
+        <h6 class="servico__number"> Nº {{ poke?.number }}</h6>
+        <div class="servico__types">
+           <p class="servico__type d-flex bg-warning" *ngFor="let type of poke?.types"
+           [class]="'servico__type' +type.toLowerCase()">{{ type }}</p>
+        </div>
+      </div>
+    </div>

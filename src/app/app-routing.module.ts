@@ -7,7 +7,7 @@ import { LoginComponent } from './components/login/login.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { ProdutosComponent } from './components/produtos/produtos.component';
-import { ServicoComponent } from './components/servico/servico.component';
+import { ServicosComponent } from './components/servicos/servicos.component';
 
 const routes: Routes = [
   {path:'', component: HomeComponent},
@@ -16,7 +16,7 @@ const routes: Routes = [
   {path: 'cadastro', component: CadastroComponent},
   {path: 'feedback', component:FeedbackComponent},
   {path: 'produtos', component:ProdutosComponent},
-  {path:'servicos', component: ServicoComponent},
+  {path: 'servicos', component: ServicosComponent},
   {path: '**', component: NotFoundComponent},
 
 ];
