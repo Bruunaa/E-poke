@@ -1,1 +1,26 @@
-<p>produtos works!</p>
+<div class="justify-content-between container-fluid">
+    <div class="container-fluid ">
+        <div class=" justify-content-center row row-cols-1 row-cols-md-1 g-1  ">
+            <div class="col mb-3" style="width:auto;">
+                <div class="text-center">
+                    <h2 class="  mt-2 text-center"> <b> PokePodutros </b> </h2>
+                    <p class="text-dark">Produtos no carrinho:
+                        <span class="badge bg-warning">{{carrinho.length}}</span>
+                    </p>
+                </div>
+                <hr class="divider   " style="width: auto;  color:#e6a42a ; ">
+                <div class=" justify-content-center container-fluid">
+                    <div class="row row-cols-1 row-cols-md-1 g-1">
+                        <div class=" col-3 mx-auto" *ngFor="let produto of produtos">
+                            <app-produto [dadoProduto]="produto" (onCarrinho)="addCarrinho($event)">
+                                <p *ngIf="produtoNoCarrinho(produto)" class="text-muted">
+                                    *Produto no carrinho
+                                </p>
+                            </app-produto>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

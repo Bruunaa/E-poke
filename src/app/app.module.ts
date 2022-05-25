@@ -12,6 +12,12 @@ import { FeedbackComponent } from './components/feedback/feedback.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { ProdutoComponent } from './components/produto/produto.component';
 import { ProdutosComponent } from './components/produtos/produtos.component';
+import { ServicoComponent } from './components/servico/servico.component';
+import { ServicosComponent } from './components/servicos/servicos.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { ContatoComponent } from './components/contato/contato.component';
+
 
 
 @NgModule({
@@ -25,11 +31,17 @@ import { ProdutosComponent } from './components/produtos/produtos.component';
     NotFoundComponent,
     ProdutoComponent,
     ProdutosComponent,
+    ServicoComponent,
+    ServicosComponent,
+    ContatoComponent
   ],
   imports: [
     BrowserModule,
     NgbModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

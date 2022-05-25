@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CadastroComponent } from './components/cadastro/cadastro.component';
+import { ContatoComponent } from './components/contato/contato.component';
 import { FeedbackComponent } from './components/feedback/feedback.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { ProdutosComponent } from './components/produtos/produtos.component';
+import { ServicosComponent } from './components/servicos/servicos.component';
 
 const routes: Routes = [
   {path:'', component: HomeComponent},
@@ -15,6 +17,8 @@ const routes: Routes = [
   {path: 'cadastro', component: CadastroComponent},
   {path: 'feedback', component:FeedbackComponent},
   {path: 'produtos', component:ProdutosComponent},
+  {path: 'servicos', component: ServicosComponent},
+  {path: 'contato', component: ContatoComponent},
   {path: '**', component: NotFoundComponent},
 
 ];

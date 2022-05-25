@@ -1,1 +1,128 @@
-<p>home works!</p>
+<div class="conteudo conteiner-fluid justify-content-center">
+    <div class="container-fluid text-center">
+        <div id="carouselSite">
+            <ngb-carousel *ngIf="imagem" class="img-fluid ">
+                <ng-template ngbSlide>
+                    <div class="picsum-img-wrapper">
+                        <img [src]="imagem" class="imagem-banner img-fluid  d-block" alt="Random first slide">
+                    </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                    <div class="picsum-img-wrapper">
+                        <img [src]="imagem2" class="imagem-banner img-fluid d-block" alt="Random second slide">
+                    </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                    <div class="picsum-img-wrapper">
+                        <img [src]="imagem3" class="imagem-banner img-fluid d-block" alt="Random second slide">
+                    </div>
+                </ng-template>
+            </ngb-carousel>
+        </div>
+        <div class=" justify-content-center container-fluid ">
+            <div class="row row-cols-3 row-cols-md-1 g-1 mx-auto">
+                <div class="col mb-3" style="width:auto;">
+                    <div class="text-center" style="width: auto ;">
+                        <h2 class="mt-2 text-center"> <b> PokePodutros </b> </h2>
+                    </div>
+                    <hr class="divider text-center" style="width: auto;  color:#e6a42a ; ">
+                    <div class="justify-content-center  align-items-center ">
+                        <div class=" container-fluid ">
+                            <div class="collection">
+                                <div class="card-deck">
+                                    <div class="row row-cols-3 row-cols-md-3 g-1 ">
+                                        <div class="col mb-3" style="width:auto;">
+                                            <div class="row ">
+                                                <div class=" col-3 mx-auto  mb-3">
+                                                    <div class="card h-100 border-warning  mb-3  " style="width: auto;">
+                                                        <div class="radius mx-auto mt-2 btn btn-warning "
+                                                            style="width: auto ; ">
+                                                            <img [src]="imagem4" class="card-img-top img-fluid"
+                                                                alt="...">
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <h3 class="card-tittle">Pokebola</h3>
+                                                            <p class="card-text">
+                                                                Um dispositivo para a captura de Pokémon selvagem.Ele é
+                                                                lançado como uma
+                                                                bola no alvo. Ele é sistema de cápsula.</p>
+                                                            <button class="btn btn-warning mb-3"><a class="nav-link"
+                                                                    [routerLink]="'/Produto'">Comprar</a>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3 mx-6 mb-3">
+                                                    <div class="card h-100 border-warning mb-3 " style="width:100%;">
+                                                        <div class="radius mx-auto mt-2 btn btn-warning "
+                                                            style="width: 25% ; ">
+                                                            <img [src]="imagem5" class="card-img-top img-fluid "
+                                                                alt="...">
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <h3 class="card-tittle">Pedra d'água</h3>
+                                                            <p class="card-text">Faz os seguintes pokémon evoluir:
+                                                                Poliwhirl
+                                                                (em
+                                                                Poliwrath),
+                                                                Shellder, Staryu, Eevee (em Vaporeon), Lombre e Panpour.
+                                                            </p>
+                                                            <button class="btn btn-warning mb-3 "><a class="nav-link"
+                                                                    [routerLink]="'/Produto'">Comprar</a>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3 mx-auto mb-3">
+                                                    <div class="card h-100 border-warning  mb-3" style="width:100%;">
+                                                        <div class="radius mx-auto mt-2 btn btn-warning "
+                                                            style="width: 25% ; ">
+                                                            <img [src]="imagem6" class="card-img-top img-fluid"
+                                                                alt="...">
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <h3 class="card-tittle">Great Ball</h3>
+                                                            <p class=" card-text">Uma bola de bom e alto desempenho que
+                                                                oferece uma taxa
+                                                                de
+                                                                captura de Pokémon maior do que um Pokébola padrão.</p>
+                                                            <p class=" card-text">R$250</p>
+                                                            <button class="btn btn-warning mb-3 "><a class="nav-link"
+                                                                    [routerLink]="'/Produto'">Comprar</a></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3 mx-auto mb-3 ">
+                                                    <div class="card h-100 border-warning mb-3  " style="width:100%;  ">
+                                                        <div class="radius mx-auto mt-2 btn btn-warning "
+                                                            style="width: 25% ; ">
+                                                            <img [src]="imagem7" class="card-img-top img-fluid"
+                                                                alt="...">
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <h3 class="card-tittle">Pedra do Brilho</h3>
+                                                            <p class="card-text">Faz os seguintes pokémon evoluir:
+                                                                Togetic, Roselia,
+                                                                Minccino
+                                                                e
+                                                                Floette.</p>
+                                                            <p class=" card-text">R$500</p>
+                                                            <button class="btn btn-warning mb-3 border-warning"><a
+                                                                    class="nav-link"
+                                                                    [routerLink]="'/Produto'">Comprar</a>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
