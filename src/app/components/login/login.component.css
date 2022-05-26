@@ -1,3 +1,7 @@
+*{
+    margin: none;
+}
+
 .container{
     border: 1px solid black;
     box-shadow: 1px 10px 5px 5px gray;
@@ -23,8 +27,6 @@ h1{
 .button-cont{
     display: inline-flex;
 }
-
-
 
 #button-login{
     margin-right: 15px;
